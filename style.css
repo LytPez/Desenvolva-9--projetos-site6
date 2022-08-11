@@ -1,8 +1,18 @@
+/*
+deifindo espaçamento, interno e externo, 
+removendo decoração de texto
+*/
 *{
   margin: 0px;
   padding: 0px;
   text-decoration: none;
 }
+
+/*
+organizando em colunas, defiindo altura total do site,
+espaçamento equivalente entre um e outro, definindo
+imagem de fundo, centralizada, e sem repetir
+*/
 body{
   display: flex;
   flex-direction: column;
@@ -12,15 +22,27 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/*
+defindo altura, cor de fundo, e alinhando ao centro
+*/
 header{
   height: 50px;
   background-color: bisque;
   display: flex;
   align-items: center;
 }
+
+/*
+definindo espaçamento externo a esquerda
+*/
 header h3{
   margin-left: 10px;
 }
+
+/*
+definindo espaçamento externo, e alinhando ao centro
+*/
 .containers{
   margin: 10px;
   display: flex;
@@ -28,6 +50,11 @@ header h3{
   align-items: center;
   
 }
+
+/*
+definindo largura, alinhamento ao centro, organizado em colunas
+cor de fundo, espaçamento externo, bordas arredondas 
+*/
 .pokemons-container{
   width: 180px;
   display: flex;
@@ -38,25 +65,51 @@ header h3{
   border-radius:8px ;
   margin: 5px;
 }
+
+/*
+definindo cor de fundo
+*/
 .pokemons-container:hover{
   background-color: burlywood;
 }
+
+/*
+definindo altura
+*/
 .pokemons-container img{
   height: 150px;
 }
+
+/*
+definindo espaçamento externo
+*/
 .pokemons-container h3{
   margin: 10px;
 }
+
+/*
+definindo cor de fundo, altura,
+alinhando ao centro na vertical
+*/
 footer{
   background-color: bisque;
   height: 50px;
   display: flex;
   align-items: center;
 }
+
+/*
+definindo espaçamento externo, e cor
+*/
 footer h4{
   margin: 10px;
   color: rgb(66,59,50);
 }
+
+/*
+quando a tela for menor que 600px, o cabeçalho será alinhado ao centro,
+ e o conteudo do site organizado em colunas
+*/
 @media (max-width:600px) {
   header{
     align-items: center;
